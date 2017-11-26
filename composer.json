@@ -1,0 +1,8 @@
+{
+    "name": "rostedt/kalukukkaro.fi",
+    "description": "kalukukkaro.fi website",
+    "require": {},
+    "require-dev": {
+        "heroku/heroku-buildpack-php": "*"
+    }
+}
