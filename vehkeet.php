@@ -1,24 +1,29 @@
 <!doctype html>
 <html lang="fi">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <?php include_once "head.php"; ?>
 
-  <title>Kalukukkaro</title>
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="stylesheet" type="text/css" href="codpiece.css">
-  <meta name="description" content="Tarjoamme konkreettisia verkkopalveluiden, kampanjoiden, sisältöjen ja mittaamisen ratkaisuja.
-Olemme teknisesti taitavin, ajatukseltamme kirkkain, ratkaisuiltamme selkein ja universumissa voittamaton, mutta puheiden sijaan keskitymme tekoihin." />
-
+  <title>KALUKUKKARO</title>
+  
   <meta property="og:url" content="http://www.kalukukkaro.fi" />
   <meta property="og:title" content="Kalukukkaro - Markkinointiviestinnän tekoja" />
   <meta property="og:description" content="Tarjoamme konkreettisia verkkopalveluiden, kampanjoiden, sisältöjen ja mittaamisen ratkaisuja. Olemme teknisesti taitavin, ajatukseltamme kirkkain, ratkaisuiltamme selkein ja universumissa voittamaton, mutta puheiden sijaan keskitymme tekoihin. Vähemmän puhetta, enemmän tekoja: http://www.kalukukkaro.fi"/>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 </head>
 <body>
 
 <?php include_once "header.php"; ?>
+<script src="js/jquery.raptorize.1.0.js"></script>
+<script type="text/javascript">
+     $(window).load(function() {
+          $('.inner').raptorize({
+              'enterOn' : 'timer',
+              'delayTime' : 3000
+          });
+     });
+</script>
 
   <div class="main content">
     <div class="column">

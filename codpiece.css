@@ -1,24 +1,25 @@
+/* feliz huevos inc */
 
 @font-face {
-    font-family: 'MrsEavesBoldItalicRegular';
-    src: url('font/mrseavbolita-080413005EmigreWebOnly.eot');
-    src: url('font/mrseavbolita-080413005EmigreWebOnly.eot?#iefix') format('embedded-opentype'),
-         url('font/mrseavbolita-080413005EmigreWebOnly.woff') format('woff');
+  font-family: 'MrsEavesBoldItalicRegular';
+  src: url('font/mrseavbolita-080413005EmigreWebOnly.eot');
+  src: url('font/mrseavbolita-080413005EmigreWebOnly.eot?#iefix') format('embedded-opentype'),
+  url('font/mrseavbolita-080413005EmigreWebOnly.woff') format('woff');
 }
 @font-face {
-    font-family: 'mrseavesbolditaliclining';
-    src: url('font/mrseavesbolditaliclining-080413005EmigreWebOnly.eot');
-    src: url('font/mrseavesbolditaliclining-080413005EmigreWebOnly.eot?#iefix') format('embedded-opentype'),
-         url('font/mrseavesbolditaliclining-080413005EmigreWebOnly.woff') format('woff');
+  font-family: 'mrseavesbolditaliclining';
+  src: url('font/mrseavesbolditaliclining-080413005EmigreWebOnly.eot');
+  src: url('font/mrseavesbolditaliclining-080413005EmigreWebOnly.eot?#iefix') format('embedded-opentype'),
+  url('font/mrseavesbolditaliclining-080413005EmigreWebOnly.woff') format('woff');
 }
 @font-face {
-  font-family: 'ITCAVANTGARDEGOTHICLTMEDIUM';    
+  font-family: 'ITCAVANTGARDEGOTHICLTMEDIUM';
   src: url('http://fontsforweb.com/public/fonts/7916/ITCAVANTGARDEGOTHICLTMEDIUM.eot');
   src: local('ITCAVANTGARDEGOTHICLTMEDIUM'), url('http://fontsforweb.com/public/fonts/7916/ITCAVANTGARDEGOTHICLTMEDIUM.ttf') format('truetype');
 }
 
-html { 
-  background: url('img/codpiece-bg.jpg') no-repeat center center fixed; 
+html {
+  background: url('img/codpiece-bg.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -32,12 +33,12 @@ html {
 
   /* IE Fix */
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
-    src='images/logo.gif',
-  sizingMethod='scale');
+          src='images/logo.gif',
+          sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
-    src='images/logo.gif',
-  sizingMethod='scale')";
-  background: no-repeat center center fixed\0/;
+  src='images/logo.gif',
+          sizingMethod='scale')";
+background: no-repeat center center fixed\0/;
 
 }
 body {
@@ -48,11 +49,10 @@ body {
 }
 .header {
   position: absolute;
-/*  top: 10px;*/
   top: 0;
   left: 0;
   right: 0;
-height: 75px;
+  height: 75px;
 
   background: #fff;
   font-family: MrsEavesBoldItalicRegular;
@@ -87,10 +87,10 @@ height: 75px;
 .menu li a:active,
 .menu li a:visited {
   color: #000;
-  text-decoration: none;  
+  text-decoration: none;
 }
 .menu li a:hover {
-  color: #4d4d4d; 
+  color: #4d4d4d;
 }
 
 div.footer {
@@ -109,9 +109,22 @@ div.footer {
   color: #bdbdbd;
 }
 .content { max-width: 1280px; margin: 0 auto; padding: 0 20px;}
-.column { max-width: 400px; margin-top: 150px; }
-.column .inner { padding: 10px 20px; background: rgba(255,255,255,0.2); }
+.column { max-width: 400px; }
+.column:first-child {
+  margin-top: 150px;
+}
+.column .inner { padding: 10px 20px; background: rgba(100,100,100,0.5); }
+.column .inner.wide { max-width: 600px; width: 600px; }
 
+.white-column {
+  background: #fff;
+  padding: 10px 20px;
+  width: 360px;
+  margin-bottom: 25px;
+}
+.white-column h3, .white-column p {
+  color: #000;
+}
 
 .share {margin-top: 25px;}
 .share img {
@@ -120,7 +133,7 @@ div.footer {
 }
 
 .main.content {
-  color: #fff; 
+  color: #fff;
   position: relative;
 }
 h1 {
@@ -129,7 +142,7 @@ h1 {
   font-size: 2.3em;
   margin: 20px 0 8px;
 }
-p { 
+p {
   margin: 0 0 25px;
   font-size: 0.9em;
   letter-spacing: 1px;
@@ -162,26 +175,51 @@ a img { border: 0; }
   -moz-transition: all 500ms ease-in;
   -o-transition: all 500ms ease-in;
   transition: all 500ms ease-in;
+  overflow: hidden;
 
 }
 .codpiece-grid li {
   display: block;
   float: left;
   width: 175px;
-  min-height: 100px;
+  min-height: 50px;
   background-color: rgba(255, 255, 255, .75);
   color: #000;
   text-align: center;
-  margin: 10px;
+  margin: 10px 10px 10px 0;
   padding: 10px;
   font-size: 16px;
-   
+
 }
 
 .codpiece-grid h2,
 .codpiece-grid h3 {
   clear: both;
 }
+
+
+#fork {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+}
+
+.legend {
+  width: 20em;
+  border: 1px solid #4d4d4d;
+  background: rgba(255,255,255,0.2);
+}
+
+.legend .title {
+  color: #000;
+  display: block;
+  margin: 0.5em;
+  border-style: solid;
+  border-width: 0 0 0 1em;
+  padding: 0 0.3em;
+}
+
 
 @media only screen and (min-height: 1000px) {
 }
@@ -204,25 +242,42 @@ a img { border: 0; }
 
   .video { width: 200px; height: 112px; }
   h1 { margin-top: 50px; }
-  .column {
+
+  .column:first-child {
     margin-top: 50px;
   }
   .header {
     height: auto;
     position: static;
   }
- .codpiece {
-  float: none;
-  margin: 0 auto;
-  width: 275px;
- }
-   
-  .menu {
+  .codpiece {
     float: none;
-    display: block;
+    margin: 0 auto;
+    width: 275px;
   }
+
+  .logo {
+    margin-bottom: 15px;
+  }
+
+  .menu, .menu li {
+    float: none;
+    position: static;
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+
   .share {
     position: static;
     display: block;
   }
+
+
+  .codpiece-grid li {
+    text-shadow: none;
+  }
+
+
 }
